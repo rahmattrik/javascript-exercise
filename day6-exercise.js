@@ -89,7 +89,7 @@ class Transaction extends Product {
         console.log("Transaction completed!");
         console.log("Transaction details:");
         for (const item of this.products) {
-            console.log(`${item.qty}x ${item.product.name} - $${(item.product.price * item.qty).toFixed(2)}`);
+            console.log(`${item.qty}pcs ${item.product.name} - $${(item.product.price * item.qty).toFixed(2)}`);
         }
         console.log(`Total: $${this.total.toFixed(2)}`);
         return {
