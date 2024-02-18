@@ -359,10 +359,12 @@ const sumArray = sumDuplicate(arrDuplicate);
  * 
  * 
  */
+ 
+function gameSuit(playerChoice) {
+    const choices = ["batu", "gunting", "kertas"];
+    const compChoice = choices[Math.floor(Math.random() * 2.9)]
 
-function suitJapan(handForm) {
-
+    
 }
 
-const inputCase = "Rock";
-const yourChance = suitJapan(inputCase);
+console.log(gameSuit("gunting"))
