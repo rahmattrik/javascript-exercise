@@ -307,13 +307,14 @@ console.log(secondArray);
 function getNumber(number) {
     const result = [];
     for (let i = 0; i < number.length; i++) {
-        if (!isNaN(number[i]) && typeof number[i] !== 'boolean') {
+        if (typeof number[i] === 'number') {
             result.push(Number(number[i]));
         }
     }
 
     console.log(result);
-    return result.length;
+    const sum = result.reduce((total, current) => total + current, 0);
+    return sum;
 }
 
 const mixArray = ["3", 1, "string", null, false, undefined, 2];
