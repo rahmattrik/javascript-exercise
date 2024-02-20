@@ -211,7 +211,7 @@ class Employee {
 class FulltimeEmployee extends Employee{
     //Child class
     constructor(name) {
-        super(name);
+        super(name); //Argument
     }
 
     addWorkingHours(hours) {
@@ -253,6 +253,6 @@ employee1.addWorkingHours(7);
 console. log (employee1. calculateTotalSalary());
 
 //PARTIME
-const employee2 = new ParttimeEmployee("joko");
-employee2.addWorkingHours(7);
-console.log(employee2. calculateTotalSalary());
+// const employee2 = new ParttimeEmployee("joko");
+// employee2.addWorkingHours(7);
+// console.log(employee2. calculateTotalSalary());
